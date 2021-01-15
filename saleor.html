@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Saleor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/saleor.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<section>
+ <header>
+
+    <nav class="navbar navbar-expand-xl navbar-light main  navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <svg width="105" height="36" fill="none" aria-labelledby="site-logo" class="sc-cvbbAY cAryzd"><title id="site-logo">Site logo</title><mask id="prefix__logo" width="105" height="35" x="0" y="1" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M.465 1.308h104.531V36H.465V1.308z" clip-rule="evenodd"></path></mask><g mask="url(#prefix__logo)" fill="#28234A" fill-rule="evenodd" clip-rule="evenodd"><path d="M17.86 35.964c6.42 0 8.034-2.592 8.034-6.144 0-4.368-3.925-5.184-7.19-5.717-2.495-.426-3.632-.64-3.632-2.166 0-1.136.99-1.563 2.605-1.563 1.98 0 2.53.569 2.714 2.237l5.21-.78c-.44-3.587-2.459-5.398-7.778-5.398-5.832 0-7.887 2.343-7.887 6.072-.036 4.83 4.512 5.327 7.887 5.895 2.091.39 2.898.746 2.898 2.13 0 1.137-.697 1.634-2.788 1.634-2.31 0-3.008-.39-3.301-2.273l-5.063.746c.477 3.8 2.715 5.327 8.291 5.327zM34.653 32.058c-2.459 0-3.339-.533-3.339-2.308 0-1.598.88-2.238 3.522-2.238h2.641v1.847c0 1.775-.88 2.699-2.824 2.699zm-2.275 3.907c2.861 0 4.145-.924 5.063-2.273v2.024h5.172V22.86c0-4.296-1.651-6.462-7.374-6.462-5.54 0-7.483 1.562-8.254 5.397l5.136.781c.33-1.633.807-2.13 2.935-2.13 2.054 0 2.385.852 2.385 2.273v1.314h-2.422c-6.566 0-8.804 1.988-8.804 6.037 0 3.977 2.018 5.895 6.163 5.895zM43.933 35.716h5.283v-27.4l-5.283 5.238v22.162zM55.673 24.139v-.959c0-1.669.77-2.806 3.081-2.806 2.238 0 2.972.96 2.972 2.806v.959h-6.053zM58.753 36c6.09 0 7.704-2.841 8.071-5.682l-5.025-.746c-.22 1.705-.55 2.593-3.045 2.593-2.531 0-3.082-1.243-3.082-2.877v-1.562h11.152v-3.41c0-4.758-1.87-7.918-8.07-7.918-6.127 0-8.218 3.196-8.218 7.244v5.114c0 3.941 2.128 7.244 8.218 7.244zM76.619 36c6.053 0 8.547-3.09 8.547-7.244v-5.114c0-4.226-2.494-7.244-8.547-7.244-6.053 0-8.474 3.018-8.474 7.244v5.114c0 4.155 2.384 7.244 8.474 7.244zm0-4.12c-2.128 0-3.192-1.1-3.192-2.876v-5.469c0-1.81 1.064-2.911 3.191-2.911 2.128 0 3.265 1.1 3.265 2.912v5.468c0 1.776-1.137 2.877-3.264 2.877zM94.601 21.817H91.77v13.787h-5.283V21.817l5.161-5.237h8.114l-5.16 5.237z"></path></g><path id="color-dash" class="animatedPath" fill="#8AC4EA" fill-rule="evenodd" d="M24.332 0L17.38 7.244h17.176L41.508 0H24.332z" clip-rule="evenodd"></path><path stroke="#28234A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.218" d="M9.963 2.998L3.449 9.492h22.59l6.513-6.494H9.962z" clip-rule="evenodd"></path></svg>
+        </a>
+           
+          
+          <!--
+        <button class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+
+        -->
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<div id="nav-icon2">
+<span ></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+
+        
+
+          
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle accordion" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">Product</a>
+              <ul class="dropdown-menu megamenu panel">
+                  <div class="head-hh ">
+                  <h6 class="list-header">PLATFORM</h6>
+                  </div>
+                   <div class="row">
+                   <li class="col-xl-6">
+                    <ul>
+                    <li>
+                      
+                      <div class="img-cntnt">
+                        <svg width="62" height="58" viewBox="-3 -1 62 58" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="animate-color"><path d="M5.19678 34.6881L20.8536 42.5164L36.2468 34.6551L20.59 26.8267L5.19678 34.6881Z" fill="#3C3C5F" stroke="#fff" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.7222 26.9232L36.2175 34.6708V18.3707L20.7222 10.623V26.9232Z" fill="#3C3C5F" stroke="#fff" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.772 10.9415L5.17684 18.7391L5.17675 34.9019L20.7719 27.1043L20.772 10.9415Z" fill="#3C3C5F" stroke="#ff" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g class="stroke"><path d="M5.19678 34.6881L20.8536 42.5164L36.2468 34.6551L20.59 26.8267L5.19678 34.6881Z" stroke="#3C3C5F" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.7222 26.9232L36.2175 34.6708V18.3707L20.7222 10.623V26.9232Z" stroke="#3C3C5F" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.772 10.9415L5.17684 18.7391L5.17675 34.9019L20.7719 27.1043L20.772 10.9415Z" stroke="#3C3C5F" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><path class="animate animate2" d="M48.5303 18.9606L32.9351 26.7582L32.9351 42.9209L48.5302 35.1233L48.5303 18.9606Z" fill="white" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path class="animate animate1" d="M5.22656 35.1732L20.7219 42.9208V26.6207L5.22656 18.873V35.1732Z" fill="white" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path class="animate" d="M1.20996 8.74962L16.8667 16.5779L32.26 8.71657L16.6032 0.888184L1.20996 8.74962Z" fill="white" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                      </div>
+                  
+                    <div class="sub-head">
+                       
+                       <h6 class="head-h">  Open Source  <div class="dwn-rec">
+                         
+                          <p><a href="#" class="text-pp">The fastest Growing commerce Platfrom</a></p>
+                        </div> </h6>
+
+                        </div>
+
+                        
+                     
+                      </li>
+                
+                    </ul>
+                  </li>
+                  <li class="col-xl-6">
+                   <ul>
+                      
+                      <li>
+                        <div class="img-cntnt">
+                          <svg width="54" height="20" viewBox="0 0 54 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="animate-color"><path class="hidden" fill-rule="evenodd" clip-rule="evenodd" d="M30.5309 0.782227L17.2891 12.869H40.2436L53.4854 0.782227H30.5309Z" fill="#83D2F4"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6202 6.51611L1.41455 19.4826H28.4372L42.6429 6.51611H15.6202Z" stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </div>
+                        <div class="sub-head">
+                       <h6 class="head-h">Cloud platfrom</h6>
+                       <div class="dwn-rec">
+                      <p><a href="#" class="text-pp more-mrgn">Apply For Prrivate beta acesses</a></p>
+                    </div>
+                      </div>
+                      </li>
+                
+                    </ul>
+                  </li>
+                </div>
+                
+                 <div class="head-hh ">
+                  <h6 class="list-header"> <span class="mng-right-spce" >Easy To manage</span>Technically Focused</h6>
+                  </div>
+
+               <div class="row">
+                  <li class="col-xl-6">
+                    <ul>
+                     
+                    
+                      <li>
+
+                        <div class="img-cntnt">
+                          <svg width="62" height="58" viewBox="-3 -1 62 58" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="animate animate3"><path d="M24.1328 6.53272L35.7916 12.3621L47.2542 6.50811L35.5954 0.678711L24.1328 6.53272Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24.1323 18.6584L35.6709 24.4276V12.2898L24.1323 6.52051V18.6584Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M35.6416 24.3625L47.2545 18.5561L47.2546 6.52051L35.6417 12.327L35.6416 24.3625Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g class="animate animate1"><path d="M12.5728 24.6314L24.2315 30.4607L35.6941 24.6067L24.0353 18.7773L12.5728 24.6314Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.5723 36.757L24.1108 42.5263V30.3884L12.5723 24.6191V36.757Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24.0815 42.4611L35.6944 36.6547L35.6945 24.6191L24.0816 30.4256L24.0815 42.4611Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g class="animate animate2"><path d="M0.907227 6.72364L12.566 12.553L24.0286 6.69903L12.3698 0.869629L0.907227 6.72364Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M0.906738 18.8493L12.4453 24.6186V12.4807L0.906738 6.71143V18.8493Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.416 24.5534L24.0289 18.747L24.029 6.71143L12.4161 12.5179L12.416 24.5534Z" fill="#fff" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g><path d="M12.52 12.3745L24.1788 18.2039L35.6414 12.3499L23.9826 6.52051L12.52 12.3745Z" fill="#fff"></path><path d="M12.5195 24.5007L24.0581 30.2699V18.1321L12.5195 12.3628V24.5007Z" fill="#fff"></path><path d="M24.0288 30.2048L35.6417 24.3984L35.6418 12.3628L24.0289 18.1692L24.0288 30.2048Z" fill="#fff"></path></g><g class="animate animate-color"><path d="M12.52 12.3745L24.1788 18.2039L35.6414 12.3499L23.9826 6.52051L12.52 12.3745Z" fill="#F16639" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.5195 24.5007L24.0581 30.2699V18.1321L12.5195 12.3628V24.5007Z" fill="#F16639" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24.0288 30.2048L35.6417 24.3984L35.6418 12.3628L24.0289 18.1692L24.0288 30.2048Z" fill="#F16639" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+                        </div>
+                        <div class="sub-head">
+
+
+                         <h6 class="head-h">Core Functionalities</h6>
+                         <div class="dwn-rec">
+                         <a href="#" class="text-pp" >Everthing you need out of the box </a>
+                         </div>
+                        </div>
+                      </li>
+                    
+                    </ul>
+                  </li>
+                  <li class="col-xl-6">
+                    <ul>
+                    
+                      
+                      <li>
+                        <div class="img-cntnt">
+                          <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="29" height="53" viewBox="0 1 29 53"><path class="animate animate1" d="M19.908 1.147a.868.868 0 00-.838-.04L1.304 9.992a.858.858 0 00-.478.772V46.29a.86.86 0 00.413.734c.137.085.294.13.451.13.131 0 .262-.032.386-.091l17.767-8.883a.858.858 0 00.478-.773V1.88a.868.868 0 00-.413-.733z" stroke="#32335A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path class="animate" d="M8.063 13.302l17.661-8.824v35.316L8.062 48.62V13.302z" fill="#fff"></path><path class="animate" d="M8.063 13.302l17.661-8.824v35.316L8.062 48.62V13.302z" stroke="#32335A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><g class="animate-color"><path d="M27.714 12.875a.687.687 0 00-.663-.03L12.979 19.88a.68.68 0 00-.378.612V48.63a.68.68 0 00.326.58.683.683 0 00.358.104.717.717 0 00.306-.072l14.072-7.036a.68.68 0 00.378-.612V13.456a.688.688 0 00-.327-.58z" fill="#7FE8A1"></path></g><path class="animate hidden" d="M21.512 40.513c.423-.545.5-1.194.17-1.45-.33-.256-.94-.022-1.363.523-.423.545-.5 1.194-.17 1.45.329.256.94.021 1.363-.523z" fill="#32335A"></path></svg>
+                        </div>
+                          <div class="sub-head">
+                          <h6 class="head-h">PWA</h6>
+                          <div class="dwn-rec">
+                        <a href="#" class="text-pp" >The Future of Mobile Experience.</a>
+                        
+                      </div>
+                      </div>
+                      </li>
+
+                     
+                    </ul>
+
+
+                  </li>
+                </div>
+                 
+
+                  <div class="row">
+                   <li class="col-xl-6">
+                    <ul>
+                    <li>
+                      
+                      <div class="img-cntnt">
+                       <svg width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.775391 11.4705L21.6818 21.9236L42.2363 11.4263L21.3299 0.973145L0.775391 11.4705Z" fill="white" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><g class="animate-color"><path d="M0.775391 33.2137L21.4662 43.5591V21.7936L0.775391 11.4482V33.2137Z" fill="#FDDD80" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M14.6767 28.2549L5.60645 23.7197" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.56836 29.2998L5.60645 27.3188" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21.4131 43.4423L42.2372 33.0303L42.2373 11.4482L21.4132 21.8603L21.4131 43.4423Z" fill="white" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><g class="animate-color"><path d="M20.3919 12.5472L19.0786 19.9651L20.3919 20.7304L21.5019 21.2583L41.2215 11.4701L32.9816 7.36035H29.9971V12.5472H20.3919Z" fill="#FDDD80"></path></g><path d="M19.2568 20.5008L20.3916 12.5472H29.9968V7.36035" stroke="#3A375B"></path><ellipse cx="20.1846" cy="6.3833" rx="3.28125" ry="1.78125" fill="white" stroke="#3A375B" stroke-width="0.900326" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></ellipse></svg>
+                      </div>
+                  
+                    <div class="sub-head">
+                       
+                       <h6 class="head-h"> Merchanddising </h6>
+                       <div class="dwn-rec">
+                       <p > <a href="#" class="text-pp">Product at there Very best</a> </p>
+
+                        </div>
+                        </div>
+                        
+                     
+                      </li>
+                
+                    </ul>
+                  </li>
+
+
+                  <li class="col-xl-6">
+                   <ul>
+                      
+                      <li>
+                        <div class="img-cntnt">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="52" height="51" viewBox="0 0 52 51"><g class="animate"><path fill="#fff" stroke="#32335A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M.67 18.106l4.623 2.311L39.124 3.524l-4.623-2.312L.67 18.106zM.67 43.652l4.575 2.287V20.543L.669 18.255v25.397z"></path><path fill="#fff" stroke="#32335A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M5.245 45.879l33.873-16.937V3.537L5.245 20.474v25.405z"></path></g><g class="animate animate1"><path fill="#fff" d="M25.556 26.485l5.4 2.7 20.342-10.152-5.4-2.7-20.342 10.152zM25.556 47.694l5.344 2.673v-21.04l-5.344-2.672v21.04z"></path><path fill="#fff" d="M30.9 50.364l20.398-10.2v-21.14L30.9 29.224v21.14z"></path></g><g class="animate animate1 animate-color"><path fill="#F195C1" stroke="#32335A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M25.556 26.485l5.4 2.7 20.342-10.152-5.4-2.7-20.342 10.152zM25.556 47.694l5.344 2.673v-21.04l-5.344-2.672v21.04z"></path><path fill="#F195C1" stroke="#32335A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30.9 50.364l20.398-10.2v-21.14L30.9 29.224v21.14z"></path></g></svg>
+                        </div>
+                        <div class="sub-head">
+                       <h6 class="head-h">API-Driven</h6>
+                       <div class="dwn-rec">
+                      <p><a href="#" class="text-pp">Build With GraphQL for Speed </a></p>
+                      </div>
+                    </div>
+                      </li>
+                
+                    </ul>
+                  </li>
+                </div>
+
+
+
+                  <div class="head-hh ">
+                  <h6 class="list-header">Services</h6>
+                  </div>
+
+               <div class="row">
+                  <li class="col-xl-6">
+                    <ul>
+                     
+                    
+                      <li>
+                        <div class="img-cntnt">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="53" height="57" fill="none"><path class="animate animate3" stroke="#000" stroke-linejoin="bevel" d="M36.256 27.252l-4.565 8.488M37.435 33.771l-2.333 5.023"></path><g class="animate"><circle cx="22.951" cy="44.176" r="8.712" fill="#F3F2F2" stroke="#000" transform="rotate(39.633 22.951 44.176)"></circle><circle cx="35.258" cy="47.661" r="5.552" fill="#F3F2F2" stroke="#000" transform="rotate(39.633 35.258 47.66)"></circle><circle cx="25.91" cy="50.804" r="6.071" fill="#F3F2F2" stroke="#000" transform="rotate(39.633 25.91 50.804)"></circle><circle cx="9.882" cy="50.804" r="6.071" fill="#F3F2F2" stroke="#000" transform="rotate(39.633 9.882 50.804)"></circle></g><g class="animate animate2"><path fill="#f9f9f9" d="M2.031 49.444h47.204v9.24H2.031z"></path><path class="hidden" fill="#FFB890" d="M46.04.911l-3.915 24.375-9.115-3.605-3.043 5.226-12.733-4.496L46.04.91z"></path></g><g class="animate animate1"><path stroke="#000" stroke-linejoin="bevel" d="M46.04.911l-3.915 24.375-9.115-3.605M46.04.91L30.62 20.788l2.39.893M46.04.91l-28.806 21.5 12.733 4.496 3.043-5.226"></path></g></svg>
+                        </div>
+                        <div class="sub-head">
+                         <h6 class="head-h">Lonces Support</h6>
+                         <div class="dwn-rec">
+                         <a href="#" class="text-pp" >Samless Setup and trasition</a>
+                        </div>
+                      </div>
+                      </li>
+                    
+                    </ul>
+                  </li>
+                  <li class="col-xl-6">
+                    <ul>
+                    
+                      
+                      <li>
+                        <div class="img-cntnt">
+                          <svg width="39" height="64" viewBox="0 -4 39 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.37695 29.8551L7.57118 32.9522L13.7654 29.8883L7.57118 26.7911L1.37695 29.8551Z" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.37695 52.1824L7.50729 55.2476V33.114L1.37695 30.0488V52.1824Z" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7.50977 55.2468L13.7706 52.1164L13.7706 30.0488L7.50985 33.1792L7.50977 55.2468Z" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.7676 16.4586L19.9618 19.5557L26.156 16.4918L19.9618 13.3947L13.7676 16.4586Z" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.7676 45.2899L19.8979 48.355V19.7175L13.7676 16.6523V45.2899Z" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.9004 48.3542L26.1612 45.2238L26.1613 16.6523L19.9005 19.7827L19.9004 48.3542Z" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><g class="animate-color"><path fill="#C0E5F5" d="M32.2576 9.74108V42.1268L26.1621 39.0791V6.69336" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path fill="#C0E5F5" d="M38.4821 6.69385L38.482 39.0139L32.2568 42.1265L32.2569 9.80643" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><g class="animate animate-color"><path fill="#C0E5F5" d="M26.165 4.09935L32.324 7.17883L38.483 4.13234L32.324 1.05285L26.165 4.09935Z" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path fill="#C0E5F5" d="M26.1641 36.5014V4.11572L32.2595 7.16345V39.5492" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path fill="#C0E5F5" d="M32.2617 39.5414L32.2618 7.2366L38.484 4.12549L38.484 36.4303" stroke="#28234A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg>
+                        </div>
+                          <div class="sub-head">
+                          <h6 class="head-h">Sucess Support</h6>
+                          <div class="dwn-rec">
+                        <a href="#"  class="text-pp" >Get The Most From Your Investment</a> 
+                      </div>
+                    </div>
+                      </li>
+                     
+                    </ul>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle accordion" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">Solutions</a>
+              <ul class="dropdown-menu megamenu midmenu panel ">
+                <div class="row">
+                  <li class="col-xl-12">
+                    <ul>
+                      <h6 class="list-header">By Use Case</h6>
+                    
+                      <li>
+                       <p class="str"> <span class="icn-slsn"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"><g class="animate-color"><path class="hidden" d="M28.184 5.918L18.141.24l-4.808 3.044 9.906 5.343.156 11.063 4.79-2.42V5.918z" fill="#61A3FE"></path></g><path d="M.993 22.146V10.792L10.6 5.117l10.043 5.677v11.353" fill="#fff"></path><path d="M.993 22.146V10.792L10.6 5.117l10.043 5.677v11.353" stroke="#32335A" stroke-width=".9"></path><path d="M6.451 14.067v11.136l4.367 2.401 3.93-2.401V14.067" stroke="#32335A" stroke-width=".9" stroke-linejoin="round"></path></svg></span> Migrating From Magento<span class="sp new-bg">New</span></p>
+                      </li>
+                      <li>
+                        <p class="str"> <span class="icn-slsn"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 26 25"><path class="hidden" fill="#61A3FE" d="M.82.974h18.369v23.908H.82z"></path><path stroke="#32335A" d="M9.369 8.748H25.38M9.369 12.795H25.38M9.369 16.842h7"></path></svg></span> Case Studies</p>
+                      </li>
+                      
+                      <h6 class="list-header">Looking for Somethings Costom? </h6>
+
+                      <li>
+                        <p class="str"> <span class="icn-slsn"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"><path d="M23.778 12.067c0 6.248-5.065 11.313-11.313 11.313-6.247 0-11.312-5.065-11.312-11.313C1.153 5.82 6.218.755 12.465.755" stroke="#32335A"></path><circle class="hidden" cx="12.473" cy="11.995" r="6.629" fill="#61A3FE"></circle></svg></span> Open source</p>
+                      </li>
+                       <li>
+                         <p class="str"> <span class="icn-slsn"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23"><path class="hidden" fill="#61A3FE" d="M5.671.755h18.997v21.677H5.671z"></path><path d="M8.303 4.554l-6.701 6.7 6.701 6.702M21.71 4.554l6.702 6.7-6.701 6.702M17.785 4.729l-5.033 13.403" stroke="#32335A"></path></svg></span> Custom Development</p>
+                       </li>
+
+                    </ul>
+                  </li>
+                 
+                  </li>
+                </div>
+              </ul>
+            </li>
+           
+
+
+           <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle accordion" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">Developers</a>
+              <ul class="dropdown-menu megamenu somebigmenu panel ">
+                <div class="row">
+                  <li class="col-xl-12">
+                    <ul>
+                      <h6 class="docment-head"> <span class="icon-hedline"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.644 4.575V22.06a9.618 9.618 0 015.687-1.862h6.777V1.875l-6.552-.002a7.812 7.812 0 00-5.912 2.702zm0 18.687v-.054a8.718 8.718 0 015.687-2.11h7.677V.975L20.557.973a8.712 8.712 0 00-6.435 2.835A8.712 8.712 0 007.686.973L.235.976v20.121h7.677c2.103 0 4.118.76 5.687 2.111v.054h1.045zm-6.732-3.065c2.066 0 4.054.665 5.687 1.862V4.575a7.812 7.812 0 00-5.912-2.702l-6.552.002v18.322h6.777z" fill="#32335A"></path><path class="hidden" fill="#FE5E98" d="M19.11 5.68h6v11.31h-6zM3.422 5.68h6v6.571h-6zM3.422 14.057h6v3.337h-6z"></path></svg></span> Documentation</h6>
+                      <div class="Technology-p">
+                       <p class="genral-line">Technology introduction Genral Architecher</p>
+                       </div>
+                     
+                       
+                       <div class="row">
+                         <div class="col-xl-6  hh-h">
+                           <div class="headless">
+                             <h6 class="hend-rec">HENDLESS</h6>
+                           </div>
+                         <div class="submenu-head">
+                           <p class="HENDLESS">Geting Strated</p>
+                           <p class="HENDLESS">Product API</p>
+                           <p class="HENDLESS">Checkout API</p>
+                           <p class="HENDLESS">Users Api</p>
+                          
+                         </div>
+
+                         </div>
+                          <div class="col-xl-6 hh-h">
+                            <div class="headless">
+                             <h6 class="hend-rec">STOREFRONT</h6>
+                           </div>
+                            
+                           <div class="submenu-head">
+                           <p class="HENDLESS">Configuration</p>
+                           <p class="HENDLESS">Docker</p>
+                           <p class="HENDLESS">Monitoring</p>
+                           <p class="HENDLESS">Extending</p>
+                          
+                         </div>
+
+                         </div>
+                       </div>
+                     
+                      
+                      <li>
+                        <h6 class="text-headline"> <span class="icon-hedline"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="-5 0 26 16"><rect class="hidden" x=".188" y=".178" width="15.152" height="15.152" rx="7.576" fill="#FE5E98"></rect><rect class="visible" x=".638" y=".628" width="14.252" height="14.252" rx="7.126" stroke="#28234A" stroke-width=".9"></rect></svg></span> Become a partner</h6>
+                      </li>
+                      <li>
+                        <h6 class="text-headline"> <span class="icon-hedline"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 24 23"><path d="M5.106 3.707h12.313a4.185 4.185 0 014.185 4.185v0a4.185 4.185 0 01-4.184 4.185H8.871a3.766 3.766 0 00-3.766 3.766v0a3.766 3.766 0 003.766 3.767h12.732" stroke="#28234A" stroke-width=".9"></path><circle class="hidden hidden1" cx="3.84" cy="3.705" r="3.316" fill="#FE5E98"></circle><circle class="hidden hidden2" cx="20.34" cy="19.608" r="3.316" fill="#FE5E98"></circle></svg></span>Road map</h6>
+                      </li>
+                        
+                          <li>
+                        <h6 class="text-headline"> <span class="icon-hedline"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18"><path stroke="#28234A" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" d="M.657 1.229h23.266v15.656H.657zM15.497 9.091h4.946M15.496 11.873h2.96"></path><path class="hidden" fill="#FE5E98" d="M2.922 3.791h10v11.063h-10z"></path><path stroke="#28234A" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" d="M19.654 4.216h1.631"></path></svg></span>PWA Store front Demo</h6>
+                      </li>
+                      
+                         <li>
+                        <h6 class="text-headline"> <span class="icon-hedline"><svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.07959" y="0.8125" width="12.6458" height="4.40063" stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"></rect><rect x="1.07959" y="8.36523" width="12.9396" height="7.28265" stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"></rect><rect x="17.2437" y="0.8125" width="6.9076" height="14.8342" stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"></rect><g class="animate-color"><rect class="hidden" x="2.80225" y="10.418" width="9.481" height="3.17903" fill="#FE7EAC"></rect><rect class="hidden hidden1" x="18.3999" y="3.01367" width="4.53928" height="1.82557" fill="#FE7EAC"></rect></g></svg></span>Dashboard Demo</h6>
+                      </li>
+                      
+                       <li>
+                        <h6 class="text-headline"> <span class="icon-hedline"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 24 22"><circle cx="4.077" cy="11.449" r="2.846" stroke="#28234A" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"></circle><circle cx="12.256" cy="18.621" r="2.846" stroke="#28234A" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"></circle><circle class="hidden hidden1" cx="12.256" cy="11.754" r="2.846" fill="#FE5E98"></circle><circle class="hidden hidden2" cx="20.584" cy="18.621" r="2.846" fill="#FE5E98"></circle><circle class="hidden hidden3" cx="20.846" cy="2.846" r="2.846" fill="#FE5E98"></circle><circle class="hidden hidden4" cx="4.077" cy="18.621" r="2.846" fill="#FE5E98"></circle><circle cx="12.256" cy="4.1" r="2.846" stroke="#28234A" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"></circle><circle cx="20.584" cy="10.949" r="2.846" stroke="#28234A" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"></circle></svg></span>Open source Communitiy</h6>
+                      </li>
+
+                    </ul>
+                  </li>
+                 
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " data-toggle="dropdown" href="#" id="navbarDropdown" role="button">Pricing</a>
+            </li>
+           <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">About</a>
+              <ul class="dropdown-menu megamenu midmenu-abu ">
+                <div class="row">
+                  <li class="col-xl-12">
+                    <ul>
+                      <h6 class="list-head"> <span class="icon-aln"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="29" height="22" viewBox="0 0 21 22"><path stroke="#28234A" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" d="M.965 2.626h18.774v18.621H.965z"></path><path stroke="#28234A" stroke-width=".9" d="M.965 7.26h18.774"></path><path stroke="#28234A" stroke-linecap="round" d="M5.809 4.393V.847M14.895 4.393V.847"></path><path class="hidden" fill="#98EBB4" d="M3.759 9.549h13.188v9.406H3.759z"></path></svg></span> Events</h6>
+                    
+                      <li>
+                      <h6 class="list-header"> <span  class="icon-aln"> <svg width="41" height="14" viewBox="0 0 41 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="animate-color"><path class="hidden" fill-rule="evenodd" clip-rule="evenodd" d="M18.2007 0.183594L9.32861 9.42786H31.2457L40.1179 0.183594H18.2007Z" fill="#98EBB4"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M9.58709 4.80322L1.42236 12.9446H22.7382L30.9029 4.80322H9.58709Z" stroke="#28234A" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"></path></svg> </span> Company <span class="clr-soon">coming soon</span></h6>
+                      <li>
+                       
+                      </li>
+                      
+                      <h6 class="list-header ll"> <span  class="icon-aln"><svg fill="none" xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25"><path class="hidden" fill="#98EBB4" d="M7.176.275h14.991v23.908H7.176z"></path><path stroke="#32335A" d="M.965 6.055h17.097M.965 11.599h17.097M.965 17.145H8.44"></path></svg></span> Blog</h6>
+
+                      <li>
+                        <div class="all-pp">
+                        <p class="txt-sa">Saleor monthly Update: Updated <span></span></p>
+                         <p class="txt-sa">Roadmap Work-in-prograss. Performance Improvements and More... <span></span></p>
+                         
+                         </div>
+                      </li>
+                      <div class="graQl">
+                     <p class="txt-line-w">What is GraphQL <span></span></p>
+                     <p class="txt-line-w">Saleor 2.10 Release Multi<span></span></p>
+                     <p class="txt-line-w">Where House Performance Groups new Chackout and new docs. <span></span></p>
+                     <p class="txt-line-w">A Return to the Realese Cycal and  <span></span> <br>
+                     Gilimpse into the Future</p>
+
+                   </div>
+                       <li>
+                       
+                       </li>
+
+                    </ul>
+                  </li>
+                 
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">Blog</a>
+            </li>
+          </ul>
+
+           <ul class="navbar-nav ml-auto hide-tr">
+
+             <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#"> </a>
+            </li>
+             -->
+              <li class="nav-item">
+              <a class="nav-link" href="#"><span class=""><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.65731 5.88048C0.69028 8.45193 0.160555 12.4799 1.66415 15.428C3.9725 18.8225 9.86561 19.2574 12.1674 19.2574C14.2719 19.2574 19.8438 18.7974 22.1342 15.4289C23.7624 12.7682 23.121 8.14733 21.1399 5.88135C21.7156 4.18794 21.6151 2.46754 20.9409 0.81531C19.0724 0.815221 17.2897 1.66711 15.9726 2.9584C13.4001 2.53793 10.5721 2.2441 8.02307 2.95802C7.72077 2.78018 7.42894 2.59843 7.14192 2.41968L7.14186 2.41964L7.14185 2.41964C5.80074 1.5844 4.5646 0.814534 2.85576 0.814453C2.14762 2.55035 2.20621 4.1118 2.65731 5.88048ZM3.54713 1.86608C3.19669 3.08855 3.27405 4.25332 3.626 5.63325L3.74587 6.10328L3.45123 6.48847C1.7106 8.76395 1.24774 12.3446 2.52597 14.9164C2.7449 15.2289 3.00485 15.5149 3.29883 15.7761C2.98639 15.2888 2.77014 14.738 2.69412 14.122C2.5364 12.8439 3.00973 11.5034 4.04978 10.1438C4.86686 9.07563 5.98655 8.69148 7.04667 8.59639C7.99895 8.51096 8.99639 8.65216 9.78616 8.76396L9.95063 8.78717L10.0008 8.79419L10.0499 8.80624C11.1885 9.08536 12.6889 9.14939 13.6751 8.82712L13.7593 8.79963L13.8469 8.78735C13.9398 8.77434 14.0384 8.75998 14.1419 8.7449C14.8528 8.6413 15.7931 8.50429 16.6889 8.54573C17.7259 8.59371 18.9358 8.88813 19.7479 9.94968C20.7586 11.2708 21.2031 12.5927 21.0583 13.8614C20.9578 14.7416 20.5838 15.5062 20.0551 16.1514C20.5409 15.7884 20.962 15.369 21.2939 14.8862C21.9448 13.8079 22.1846 12.2436 21.9974 10.6218C21.8093 8.9922 21.2097 7.48028 20.3875 6.53988L20.0077 6.10551L20.1935 5.55918C20.6097 4.33482 20.617 3.09244 20.251 1.86146C18.929 2.0365 17.6629 2.70171 16.6723 3.67287L16.3109 4.02721L15.8115 3.94558C13.2504 3.52696 10.6132 3.27132 8.29266 3.92126L7.88309 4.03597L7.51642 3.82027C7.16368 3.61276 6.83998 3.41257 6.53547 3.22425L6.53546 3.22424C5.44391 2.54919 4.59901 2.02668 3.54713 1.86608ZM14.2957 9.73354C15.8406 9.50978 17.9219 9.20832 18.9541 10.5576C22.5665 15.2797 16.7719 18.2249 12.1575 18.2249C7.11561 18.2249 1.0721 15.6823 4.8437 10.7518C5.99969 9.24056 7.99772 9.52212 9.67059 9.75787L9.81209 9.77777C11.0517 10.0817 12.7574 10.1793 13.9856 9.77797C14.0861 9.7639 14.1896 9.7489 14.2957 9.73354ZM7.13151 12.3804C6.95498 12.6315 6.82997 13.0048 6.82997 13.4406C6.82997 13.8765 6.95498 14.2498 7.13151 14.5008C7.30905 14.7534 7.507 14.8467 7.67015 14.8467C7.8333 14.8467 8.03124 14.7534 8.20878 14.5008C8.38531 14.2498 8.51033 13.8765 8.51033 13.4406C8.51033 13.0048 8.38531 12.6315 8.20878 12.3804C8.03124 12.1279 7.8333 12.0346 7.67015 12.0346C7.507 12.0346 7.30905 12.1279 7.13151 12.3804ZM6.31348 11.8053C6.62099 11.3679 7.09313 11.0346 7.67015 11.0346C8.24716 11.0346 8.71931 11.3679 9.02682 11.8053C9.33533 12.244 9.51033 12.8238 9.51033 13.4406C9.51033 14.0575 9.33533 14.6372 9.02682 15.076C8.71931 15.5134 8.24716 15.8467 7.67015 15.8467C7.09313 15.8467 6.62099 15.5134 6.31348 15.076C6.00496 14.6372 5.82997 14.0575 5.82997 13.4406C5.82997 12.8238 6.00496 12.244 6.31348 11.8053ZM15.3085 13.4401C15.3085 13.0043 15.4335 12.631 15.61 12.3799C15.7876 12.1274 15.9855 12.0341 16.1487 12.0341C16.3118 12.0341 16.5098 12.1274 16.6873 12.3799C16.8638 12.631 16.9888 13.0043 16.9888 13.4401C16.9888 13.876 16.8638 14.2493 16.6873 14.5004C16.5098 14.7529 16.3118 14.8462 16.1487 14.8462C15.9855 14.8462 15.7876 14.7529 15.61 14.5004C15.4335 14.2493 15.3085 13.876 15.3085 13.4401ZM16.1487 11.0341C15.5717 11.0341 15.0995 11.3674 14.792 11.8048C14.4835 12.2436 14.3085 12.8233 14.3085 13.4401C14.3085 14.057 14.4835 14.6367 14.792 15.0755C15.0995 15.5129 15.5717 15.8462 16.1487 15.8462C16.7257 15.8462 17.1978 15.5129 17.5053 15.0755C17.8139 14.6367 17.9888 14.057 17.9888 13.4401C17.9888 12.8233 17.8139 12.2436 17.5053 11.8048C17.1978 11.3674 16.7257 11.0341 16.1487 11.0341Z" fill="#28234A"></path></svg></span> <span class="sp"><svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.6104 0.821685L13.3479 6.75661C13.4935 7.07242 13.7928 7.28986 14.1382 7.33081L20.6286 8.10035L15.8301 12.5379C15.5747 12.774 15.4604 13.1258 15.5282 13.4669L16.802 19.8775L11.0988 16.6851C10.7953 16.5152 10.4254 16.5152 10.1219 16.6851L4.41875 19.8775L5.69251 13.4669C5.76029 13.1258 5.64598 12.774 5.39064 12.5379L0.592128 8.10035L7.08252 7.33081C7.42788 7.28986 7.72717 7.07242 7.87284 6.75661L10.6104 0.821685Z" stroke="#28234A"></path></svg></span> 9146</a>
+            </li>
+
+              <li class="nav-item">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+
+            <li class="nav-item">
+              <div class="btn-right-nav">
+              <a class=" nav-link-nk" href="#">Request demo</a>
+            </div>
+            </li>
+
+
+         
+ 
+
+</ul>
+
+
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+</section>
+
+
+
+<section>
+<div class="bnr-part">
+  <div class="container-fluid">
+    <div class="bnr-box">
+    <div class="started-hed">
+      <h4 class="sh">Come for the performance, stay for the flexibility</h4>
+    </div>
+    <div class="line-stay">
+      <h6 class="info">A headless, GraphQL-first e-commerce platform delivering ultra-fast<br> dynamic and personalized shopping experiences.</h6>
+    </div>
+    <div class="box-text">
+      <button type="button" class="btn btn-outline-primary">GET IN TOUCH</button>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+
+</section>
+
+
+<section class="footer-bg">
+  <footer>
+    <div class="container">
+    <div class="get-update">
+      <div class="row">
+        <div class="col-xl-8 col-12 col-md-8 col-lg-8">
+          <div class="row">
+            <div class="col-xl-3 col-12 col-md-3 col-lg-3">
+              <div class="get-head">
+                <h6 class="get-h">Get updates from Saleor:</h6>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6 col-md-3 col-lg-3 ">
+            <div class="email-info">
+              <h6 class="get-h"> <input type="text" class="inpt-bder" id="email" name="fname" value="email@example.com"></h6>
+            </div>
+            </div>
+            <div class="col-xl-2 col-6 col-md-3 col-lg-2">
+              <div class="sign">
+                <h6  class="get-h">SIGN UP</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-xl-4 col-md-4 col-lg-4 ">
+           <div class="contact">
+             <h6 class="con "> <span class="sp">Contact Us </span>  <img class="sp" src="./assets/images/tw.svg">   <img class="sp" src="./assets/images/fb.svg">   <img class="sp" src="./assets/images/sp.svg">  <img  class="sp" src="./assets/images/gh.svg">  </h6>
+           </div>
+
+        </div>
+      </div>
+      
+    </div>
+    </div>
+    
+    <div class="footer-brdr-uder">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 col-lg-4">
+            <div class="saleor-svg">
+             <img  class="logo-svg" src="./assets/images/selerimg.svg">
+            </div>
+          </div>
+          <div class="col-xl-2 col-6 col-md-2 col-lg-2">
+            <div class="head-sub">
+              <h6 class="fo-sub">Product</h6>
+            </div>
+            <div class="fo-pp">
+              <p class="head-p">Core functionalities</p>
+              <p class="head-p">Merchandising</p>
+              <p class="head-p">Open platform</p>
+              <p class="head-p">PWA</p>
+              <p class="head-p">API-driven</p>
+              <p class="head-p">Launch support</p>
+            </div>
+          </div>
+           <div class="col-xl-2 col-6 col-md-2 col-lg-2">
+            <div class="head-sub">
+              <h6 class="fo-sub">Solutions</h6>
+            </div>
+            <div class="fo-pp">
+              <p class="head-p">Magento Migration</p>
+               <p class="head-p">Case studies</p>
+                <p class="head-p">Open source</p>
+                 <p class="head-p">Custom development</p>
+                  
+              </div>
+          </div>
+          <div class="col-xl-2 col-6 col-md-2 col-lg-2">
+             <div class="head-sub">
+              <h6 class="fo-sub">Developers</h6>
+            </div>
+              <div class="fo-pp">
+              <p class="head-p">API documentation</p>
+               <p class="head-p">Become a partner</p>
+                <p class="head-p">Roadmap</p>
+                 <p class="head-p">Open source community</p>
+         </div>
+          </div>
+          <div class="col-xl-2 col-6 col-md-2 col-lg-2">
+             <div class="head-sub">
+              <h6 class="fo-sub">About</h6>
+            </div>
+            <div class="fo-pp">
+              <p class="head-p">Switching from Magento</p>
+               <p class="head-p">Blog</p>
+               
+         </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  <div class="desktop-hide">
+    <div class="container">
+      <div class="trp">
+         <h6><span class="mrgn-rgt">Terms of use </span>Privacy policy</h6>
+      </div>
+
+       <div class="logo-s-svg">
+       <img  class="logo-svg" src="./assets/images/selerimg.svg">
+      </div>
+
+<div class="contact-icon-svg">
+  <h6 class="con "> <span class="sp cnt">Contact Us </span>  <img class="sp" src="./assets/images/tw.svg">   <img class="sp" src="./assets/images/fb.svg">   <img class="sp" src="./assets/images/sp.svg">  <img  class="sp" src="./assets/images/gh.svg">  </h6>
+</div>
+    </div>
+    
+  </div>
+
+
+
+<div class="copy-right">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-md-6 col-lg-6">
+       <div class="copy-text">
+         <h6 class="c-r"><span class="sun"> © Copyright 2009 - 2020</span> Mirumee Software
+</h6>
+       </div>     
+      </div>
+      <div class="col-xl-6 col-md-6 col-lg-6">
+        <div class="right-side">
+          <h6 class="c-r"><span class="mrgn-rgt">Terms of use </span>Privacy policy</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+  </footer>
+</section>
+
+
+
+
+</body>
+
+
+<script type="text/javascript">
+  
+$(document).on('click', '.dropdown-menu', function (e) {
+  e.stopPropagation();
+});
+
+$(document).ready(function(){
+  $('#nav-icon2').click(function(){
+    $(this).toggleClass('open');
+
+  });
+});
+
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+if ($('.smart-scroll').length > 0) { // check if element exists
+    var last_scroll_top = 0;
+    $(window).on('scroll', function() {
+        scroll_top = $(this).scrollTop();
+        if(scroll_top < last_scroll_top) {
+            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+        }
+        else {
+            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+        }
+        last_scroll_top = scroll_top;
+    });
+}
+</script>
+
+</html>
